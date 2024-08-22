@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'tkang7.github.io',
-  // base: './v2',
+  site: 'https://tkang7.github.io',
   integrations: [mdx(), sitemap(), tailwind()]
 });

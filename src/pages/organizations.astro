@@ -1,6 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import ubc_logo from "../images/ubc-logo.png"
+import ubc_eng_logo from "../images/ubc-eng-logo.png"
+import campus_lightbox_logo from "../images/CLB-square.png"
+import settle_logo from "../images/settleco_logo.jpeg"
+import korea_university_logo from "../images/korea_university_logo.svg.png"
+import sap_logo from "../images/sap_logo.svg.png"
+import project_aurora_logo from "../images/project_aurora.png"
+import geering_up_logo from "../images/geering_up_logo.png"
+import classpick_logo from "../images/classpick_logo.webp"
+import british_council_logo from "../images/british_council_logo.png"
 ---
 
 <BaseLayout title="Organization" sideBarActiveItemID="organizations">
@@ -10,31 +20,92 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
   <HorizontalCard
     title="UBC Master of Data Science in Computational Linguistics"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
+    img={ubc_logo}
+    desc="Graduate Student"
+    badge="School"
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Campus Lightbox"
+    img={campus_lightbox_logo}
+    desc="Co-Founder & Director"
+    badge="Non-Profit"
     url="#"
+  />
+  <br><br>
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Past Organizations</div>
+  </div>
+
+  <HorizontalCard
+    title="UBC Faculty of Engineering"
+    img={ubc_eng_logo}
+    desc="Undergraduate Student"
+    url="#"
+    badge="School"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Settle"
+    img={settle_logo}
+    desc="Software Engineer"
     url="#"
-    badge="NEW"
+    badge="Work"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Korea University"
+    img={korea_university_logo}
+    desc="Exchange Student"
     url="#"
+    badge="School"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SAP"
+    img={sap_logo}
+    desc="Software Engineer & Technical Project Manager"
+    url="#"
+    badge="Work"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Project Aurora Mental Health Foundation"
+    img={project_aurora_logo}
+    desc="Co-Founder & Co-Director"
+    url="#"
+    badge="Non-Profit"
+  />
+  <HorizontalCard
+    title="University of British Columbia"
+    img={ubc_logo}
+    desc="Residence Advisor | Senior Orientation Leader | Campus Ambassador | Notetaker"
+    url="#"
+    badge="School"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Geering Up"
+    img={geering_up_logo}
+    desc="Software Engineering Instructor"
+    url="#"
+    badge="Work"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="ClassPick"
+    img={classpick_logo}
+    desc="Sales Manager"
+    url="#"
+    badge="Work"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="British Council"
+    img={british_council_logo}
+    desc="Administrative Staff"
+    url="#"
+    badge="Work"
   />
 </BaseLayout>

@@ -1,3 +1,41 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+    font-family: 'BreadleySans';
+    src: url('/fonts/public/fonts/BreadleySans-Regular.ttf') format('tff');
+}
+
+@font-face {
+    font-family: 'Sublima-ExtraBold';
+    src: url('/fonts/public/fonts/Sublima-ExtraBold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sublima-ExraBoldItalic';
+    src: url('/fonts/public/fonts/Sublima-ExtraBoldItalic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sublima-ExtraLight';
+    src: url('/fonts/public/fonts/Sublima-ExtraLight.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sublima-ExtraLightItalic';
+    src: url('/fonts/public/fonts/Sublima-ExtraLightItalic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

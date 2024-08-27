@@ -1,51 +1,76 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import image_clb_primary from "../images/CLB-primary.png"
+import business_intelligence from "../images/business-intelligence.png"
+import app_development from "../images/app-development.png"
+import project_aurora_primary from "../images/project_aurora.png"
+import recycle_logo from "../images/recycle-symbol.png"
+import badminton_logo from "../images/badminton.png"
+import contrio_logo from "../images/contrio_logo.png"
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Ongoing Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Campus Lightbox (CLB)"
+    img={image_clb_primary}
+    desc="A mental health platform designed to inform and suggest appropriate resources and organizations to university students"
+    url="https://campuslightbox.com"
+    badge="Non-Profit"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="ML Models"
+    img={business_intelligence}
+    desc="Experimentation with various classical and neo machine learning models to analyze trade-offs and to gain insight and hands on experience working with models"
+    url="https://github.com/tkang7/ml_models"
+    badge="AI/ML"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Personal Website (this webpage!)"
+    img={app_development}
+    desc="Currently adding additional features such as an NLP powered search bar and more!"
     url="#"
+    badge="Web-App"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Completed Projects</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Contrio"
+    img={contrio_logo}
+    desc="Contrio is a full suite of integrated productivity tools to handle all administrative aspects of a freelancing project"
+    url="https://github.com/tkang7/contrio-nvd"
+    badge="Web-App"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Project Aurora"
+    img={project_aurora_primary}
+    desc="Project Aurora is a Canadian non-profit project incubator that provided funding, networking, and coaching to project leaders."
+    url="https://www.linkedin.com/company/proj-aurora-mental-health-foundation/?viewAsMember=true"
+    badge="Non-Profit"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Badminton Connect"
+    img={badminton_logo}
+    desc="Java-based Android application connected badminton players with local badminton centers"
+    url="https://github.com/tkang7/badminton-connect"
+    badge="Mobile App"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Recycle Space"
+    img={recycle_logo}
+    desc="JS/HTML/CSS based web-app that uses the Google Vision API to scan objects using a camera to determine its recycling category"
+    url="https://github.com/tkang7/NWHacks2020_recyclespace"
+    badge="Web-App"
   />
 </BaseLayout>

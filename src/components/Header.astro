@@ -1,4 +1,4 @@
-<div class="sticky top-0 z-10 flex h-16">
+<div class="sticky top-0 z-30 flex h-5">
   <div class="navbar">
     <div class="navbar-start">
       <label for="my-drawer" class="btn btn-square btn-ghost">
@@ -18,3 +18,23 @@
     <div class="navbar-end"></div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let lastScrollTop = 0;
+    const menuButton = document.getElementById("menu-button");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        menuButton.classList.add("hidden-scroll");
+      } else {
+        // Scrolling up
+        menuButton.classList.remove("hidden-scroll");
+      }
+      lastScrollTop = scrollTop;
+    });
+  });
+</script>
